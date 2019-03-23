@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="login"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="2"
+           time="99.381">
+  <properties />
+  
+            <testcase name="FirefoxTest" time="0.0" classname="web.ui.NewTest">
+          <skipped />
+    </testcase>
+            <testcase name="GoogleTest" time="0.0" classname="web.ui.NewTest">
+          <skipped />
+    </testcase>
+  
+            <testcase name="GoogleTest" time="12.769" classname="web.ui.NewTest" />
+                <testcase name="FirefoxTest" time="16.687" classname="web.ui.NewTest" />
+      
+</testsuite>

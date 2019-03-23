@@ -1,0 +1,15 @@
+{
+    "pageName":"qq",  
+    "xmlpath":"student2.xml", 
+    "type":"mi5",
+    "udid":"dsahfjkdsafewrq143",
+    "port":"4723",
+    "sendKeys_搜索":"git",
+    "click_百度一下":""
+    //"sendKeys_username":"${username}",
+    // "sendKeys_password":"1234567",
+    // "click_login":"",
+    // "setScroll_str":"100",
+    // "testng_element":"Dashboard"
+}
+

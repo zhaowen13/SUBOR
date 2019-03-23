@@ -1,0 +1,14 @@
+{
+    "pageName":"baidu",  
+    "xmlpath":"student.xml",  
+    "type":"Firefox",
+    "url":"https://wwww.baidu.com",
+    "sendKeys_搜索":"git",
+    "click_百度一下":""
+    // "sendKeys_username":"${username}",
+    // "sendKeys_password":"1234567",
+    // "click_login":"",
+    // "setScroll_str":"100",
+    // "testng_element":"Dashboard"
+}
+

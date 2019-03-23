@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="newproposal"
+           tests="2"
+           failures="1"
+           errors="0"
+           skipped="1"
+           time="7.593">
+  <properties />
+            <testcase name="GoogleTest" time="3.546" classname="web.ui.login2">
+                <failure type="org.openqa.selenium.SessionNotCreatedException"
+                  message="Unable to create new remote session. desired capabilities = Capabilities [{marionette=true, firefoxOptions=org.openqa.selenium.firefox.FirefoxOptions@29582968, browserName=firefox, moz:firefoxOptions=org.openqa.selenium.firefox.FirefoxOptions@29582968, version=, platform=ANY}], required capabilities = Capabilities [{}]
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;DESKTOP-2DAE128&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: driver.version: FirefoxDriver"
+              >
+<![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{marionette=true, firefoxOptions=org.openqa.selenium.firefox.FirefoxOptions@29582968, browserName=firefox, moz:firefoxOptions=org.openqa.selenium.firefox.FirefoxOptions@29582968, version=, platform=ANY}], required capabilities = Capabilities [{}]
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-2DAE128', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
+Driver info: driver.version: FirefoxDriver
+  org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:91)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:128)
+  org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:259)
+  org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:247)
+  org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:242)
+  org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:238)
+  org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
+  web.ui.BasePage.set(BasePage.java:48)
+  web.ui.BasePage.<init>(BasePage.java:68)
+  web.ui.action.actionset(action.java:36)
+  web.ui.login2.GoogleTest(login2.java:14)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:497)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+  org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
+  
+            <testcase name="GoogleTest" time="0.0" classname="web.ui.login2">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

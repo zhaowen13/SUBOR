@@ -1,0 +1,172 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+ 	<properties>
+ 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <argLine>-Dfile.encoding=UTF-8</argLine>
+      <!--   <allure.version>1.4.23</allure.version>
+        <aspectj.version>1.8.5</aspectj.version> -->
+    </properties>
+  <modelVersion>4.0.0</modelVersion>
+  
+
+  <groupId>com</groupId>
+  <artifactId>Refprm.UI</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>zendao</name>
+  <url>http://maven.apache.org</url>
+
+   <dependencies>
+   
+  
+   
+   
+	 <dependency>
+	    <groupId>org.easymock</groupId>
+	    <artifactId>easymock</artifactId>
+	    <version>3.4</version>
+	</dependency>
+	
+   <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.14.3</version>
+    <scope>test</scope>
+</dependency>
+
+  <dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>3.2.0</version>
+    <scope>test</scope>
+</dependency>
+
+    <dependency>
+	    <groupId>io.appium</groupId>
+	    <artifactId>java-client</artifactId>
+	    <version>3.3.0</version>
+	</dependency>
+
+    <dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.8-dmr</version>
+    </dependency>
+	<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.141.59</version>
+</dependency>
+
+	
+	<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>3.17</version>
+</dependency>
+	
+	<dependency>
+    <groupId>org.wso2.orbit.org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>3.17.0.wso2v1</version>
+</dependency>
+	
+	<dependency>
+    <groupId>org.apache.xmlbeans</groupId>
+    <artifactId>xmlbeans</artifactId>
+    <version>3.0.0</version>
+</dependency>
+	
+	
+	<dependency>
+	    <groupId>xml-apis</groupId>
+	    <artifactId>xml-apis</artifactId>
+	    <version>1.4.01</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.uncommons</groupId>
+	    <artifactId>reportng</artifactId>
+	    <version>1.1.4</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.apache.velocity</groupId>
+	    <artifactId>velocity</artifactId>
+	    <version>1.7</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.google.inject</groupId>
+	    <artifactId>guice</artifactId>
+	    <version>4.1.0</version>
+	</dependency>
+	
+	<dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>22.0</version>
+        </dependency>
+        
+	<dependency>
+    	<groupId>org.apache.logging.log4j</groupId>
+    	<artifactId>log4j-api</artifactId>
+    	<version>2.5</version>
+  	</dependency>
+  	
+  	<dependency>
+    	<groupId>org.apache.logging.log4j</groupId>
+    	<artifactId>log4j-core</artifactId>
+    	<version>2.5</version>
+  	</dependency>
+	
+	<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.6</version>
+</dependency>
+
+<dependency>
+    <groupId>dom4j</groupId>
+    <artifactId>dom4j</artifactId>
+    <version>1.6.1</version>
+</dependency>
+		
+<dependency>
+    <groupId>com.alibaba</groupId>
+    <artifactId>fastjson</artifactId>
+    <version>1.2.54</version>
+</dependency>
+
+  </dependencies>
+  
+  <build>
+  <defaultGoal>compile</defaultGoal>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.19.1</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                 	<properpties>
+				 		<property>
+                 		<name>usedefaultlisteners</name>
+                 		<value>false</value>
+                 		</property>
+                 		<property>
+                 			<name>listener</name>
+                 			<value>org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter</value>
+                 		</property>
+                 	</properpties>
+                <!-- 	<workingDirectory>target/</workingDirectory> -->
+                </configuration>
+  		</plugin>
+  	</plugins>
+  </build>
+
+</project>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="rbctests" parallel="methods" thread-count="2">
+
+  <test verbose="8" name="login">
+    <classes>
+      <class name="web.ui.NewTest"/>    
+    </classes>
+  </test> 
+  <listeners>
+<listener class-name="org.uncommons.reportng.HTMLReporter" />
+<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  <listener class-name="utils.OverrideIAnnotation" />
+</listeners>
+</suite>

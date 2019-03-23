@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [rbctests]" parallel="methods">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="utils.OverrideIAnnotation"/>
+  </listeners>
+  <test thread-count="2" name="login(failed)" parallel="methods">
+    <classes>
+      <class name="web.ui.NewTest">
+        <methods>
+          <include name="FirefoxTest"/>
+          <include name="GoogleTest"/>
+        </methods>
+      </class> <!-- web.ui.NewTest -->
+    </classes>
+  </test> <!-- login(failed) -->
+</suite> <!-- Failed suite [rbctests] -->
